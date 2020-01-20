@@ -60,18 +60,18 @@ header:after {
 
 .logo {
 	height: 100%;
-	width: 15%;
+	width: auto;
 	display: flex;
 	align-items: center;
 }
 
 .logo span {
 	padding-top: 2%;
-	font-size: 300%;
+	font-size: 5vh;
 }
 
 .logo img {
-	height: 60%;
+	height: 7vh;
 	width: auto;
 	padding: 0 10%;
 }
