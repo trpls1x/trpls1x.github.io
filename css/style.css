@@ -53,8 +53,8 @@ header:after {
 
   	position: absolute;
   	height: 3%;
-  	background: rgb(193,0,0);
-    background: linear-gradient(90deg, rgba(193,0,0,1) 12%, rgba(252,253,255,1) 100%);
+  	background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 100%);
 }
 
 .logo {
@@ -98,7 +98,7 @@ header:after {
 main {
 /*	border: 1px solid #000;
 */	margin-top: 5vh;
-	height: 80vh;
+	min-height: 80vh;
 
 	display: flex;
 	justify-content: space-between;
@@ -123,13 +123,6 @@ section h1 {
 section p {
 	font-size: 4vh;
 }
-
-.section-texture {
-	height: 100%;
-	width: 100%;
-	opacity: 0.1;
-}
-
 aside {
 	height: 100%;
 /*	border: 1px solid red;
@@ -139,6 +132,6 @@ aside {
 }
 
 aside img {
-	height: 95%;
+	height: 70vh;
 	width: auto;
 }
