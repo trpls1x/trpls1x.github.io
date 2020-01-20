@@ -47,7 +47,7 @@ header {
 
 header:after { 
   	background: none repeat scroll 0 0 transparent;
- 	bottom: 2%;
+ 	bottom: .5vh;
  	content: "";
  	width: 100%;
   	display: block;
@@ -100,10 +100,18 @@ main {
 	border: 1px solid #000;
 	margin-top: 5vh;
 	height: 80vh;
+
+	display: flex;
 }
 
 section {
 	height: 100%;
-	width: 50%;
+	flex-grow: 1;
+	border: 1px solid red;
+}
+
+aside {
+	height: 100%;
+	flex-grow: 1.5;
 	border: 1px solid red;
 }
