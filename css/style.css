@@ -61,6 +61,7 @@ header:after {
 
 .logo {
 	height: 100%;
+	
 	width: auto;
 	display: flex;
 	align-items: center;
