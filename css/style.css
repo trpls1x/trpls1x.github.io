@@ -2,9 +2,11 @@ html,body {
 	font-family: 'Josefin Sans', sans-serif;
 	margin: 0;
 	padding: 0;
+	overflow: none;
 }
 
 body {
+	background: #F9F9F9;
 	margin: 0 5vh;
 }
 
@@ -67,6 +69,11 @@ header:after {
 .logo span {
 	padding-top: 2%;
 	font-size: 5vh;
+	font-weight: bold;
+
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 .logo img {
