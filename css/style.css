@@ -9,10 +9,6 @@ body {
 	-webkit-overflow-scrolling: touch;
 }
 
-.content {
-	border: 1px solid #000;
-}
-
 #headerwrap {
 	background: url(../images/header.png) no-repeat center top;
 	background-attachment: relative;
@@ -32,6 +28,7 @@ body {
 
 .name h5 {
 	margin-left: 10px;
+	color: #2d5d7e;
 	font-family: RotondaC;
 }
 
@@ -39,6 +36,11 @@ body {
 	padding: 0 10px;
 	text-align: left;
 	list-style: none outside;
+}
+
+.content h6 {
+	padding: 10px 10px 0;
+	margin: 0;
 }
 
 .content a {
