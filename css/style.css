@@ -13,15 +13,10 @@ h4 {
 	color: #2d5d7e;
 }
 
-/*.content {
-	border: 1px solid #000;
-}*/
-
 body {
 	-webkit-overflow-scrolling: touch;
 	background: #fbf3eb;
 }
-
 
 header {
 	background: url(../images/header.png) repeat-x;
@@ -33,9 +28,13 @@ header {
 
 footer {
 	background: url(../images/footer.png);
-	background-position: 100% 100%;
-	height: 10vh;
+	-webkit-background-size: cover;
+	background-size: cover;
 	margin-top: 2vh;
+	min-height: 13rem;
+
+	display: flex;
+	align-items: flex-end;
 }
 
 .logo {
@@ -68,6 +67,7 @@ footer {
 }
 
 .content h6 {
+	font-weight: 600;
 	padding: 0 10px;
 	margin: 0;
 }
@@ -165,5 +165,45 @@ footer {
 	width: 100%
 }
 
+/*footer * {
+	border: 1px solid #000;
+}*/
+
+footer h5 {
+	text-align: center;
+	font-size: 1.3rem;
+	color: #2d5d7e;
+}
+
+footer span {
+	color: #06465f;
+}
+
+footer .row {
+	padding-top: 10px;
+}
+
+footer .col-lg-3, .pos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*.pls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
 
 
+.contacts i {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 170%;
+	height: 30px;
+	width: 30px;
+	color: #afcede;
+	background: #fff;
+	border-radius: 50%;
+}
