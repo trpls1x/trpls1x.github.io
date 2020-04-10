@@ -13,11 +13,40 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-2 col-sm-3"></div>
-				<div class="logo col-5 col-sm-6 col-lg-6 px-0 offset-5 offset-sm-3 offset-lg-0">
+				<div class="col-2 col-sm-3 px-0 d-lg-none"> <!--менюшка-->
+				</div>
+
+				<div class="col-2 col-sm-3 px-0 d-none d-lg-inline">
+					<form>
+					  	<div class="input-group">
+						    <input type="text" class="form-control" placeholder="поиск на сайте" style="border-radius: 20px 0 0 20px;">
+						    <div class="input-group-btn">
+						      	<button class="btn btn-default" type="submit"  style="background: #fff; border-radius: 0 20px 20px 0;">
+						        	<i class="fas fa-search"></i>
+						      	</button>
+						    </div>
+					  	</div>
+					</form>
+
+					<div class="row no-gutters">
+						<div class="col-6 d-flex justify-content-center header_button">
+							<a href="#"><i class="fas fa-info"></i>О компании</a>
+						</div>
+						<div class="col-6 d-flex justify-content-center header_button">
+							<a href="#"><i class="fas fa-truck"></i>Доставка</a>
+						</div>
+					</div> <!--левая часть хедера-->
+
+					<p>Товары наши хороши - <br><span>развивайтесь малыши!</span></p>
+				</div>
+
+				<div class="logo col-5 col-sm-6 col-lg-6 px-0 offset-5 offset-sm-3 offset-lg-0"> <!--лого-->
 					<img class="img-fluid img-responsive" src="images/Логотип.png" alt="">
 				</div>
-				<div class="col-lg-3 d-none d-lg-inline"></div>
+
+				<div class="col-lg-3 d-none d-lg-inline"> <!--правая часть хедера-->
+					
+				</div>
 			</div>
 		</div>
 	</header>
@@ -25,7 +54,7 @@
 	<main>
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="row col-lg-9 col-sm-12 order-lg-1 order-lg-1">
+				<div class="row col-lg-9 col-sm-12 order-lg-1">
 					<div class="content col-lg-4 col-sm-6 col-12">
 						<div class="name">
 							<img class="img-responsive" src="images/коляски.png" alt="коляски">

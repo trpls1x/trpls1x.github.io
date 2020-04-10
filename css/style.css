@@ -189,13 +189,6 @@ footer .col-lg-3, .pos {
 	align-items: center;
 }
 
-/*.pls {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}*/
-
-
 .contacts i {
 	margin-left: 5px;
 	margin-bottom: 10px;
@@ -206,4 +199,33 @@ footer .col-lg-3, .pos {
 	color: #afcede;
 	background: #fff;
 	border-radius: 50%;
+}
+
+/*header * {
+	border: 1px solid #000;
+}*/
+
+.header_button i {
+	margin-right: 5px;
+}
+
+.header_button a {
+	padding: 0 5px;
+	border-radius: 30px;
+	font-size: 1rem;
+	color: #005177;
+	background: #eff5f8;
+}
+
+header p {
+	color: #005177;
+	font-family: RotondaC;
+	font-size: calc(1.4vh + 0.8vw);
+	text-align: center;
+	-webkit-text-stroke: 1.2px white;
+    -webkit-text-fill-color: #005177;
+}
+
+header p span {
+	font-size: calc(1.2vh + 0.6vw);
 }
