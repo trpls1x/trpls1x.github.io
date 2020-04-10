@@ -3,6 +3,11 @@
     src: url("../fonts/rotondac-bold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: Trebuchet;
+    src: url("../fonts/Trebuchet.ttf") format("opentype");
+}
+
 h1,h2,h3,h4,h5 {
 	font-family: RotondaC;
 }
@@ -16,14 +21,15 @@ h4 {
 body {
 	-webkit-overflow-scrolling: touch;
 	background: #fbf3eb;
+	font-family: Trebuchet;
 }
 
 header {
 	background: url(../images/header.png) repeat-x;
-	margin-bottom: 2rem;
+	padding-top: 1vw;
+	margin-bottom: 1vw;
 	-webkit-background-size: auto 100%;
 	background-size: auto 100%;
-	position: relative;
 }
 
 footer {
@@ -164,8 +170,8 @@ footer {
 .banner img {
 	width: 100%
 }
-
-/*footer * {
+/*
+footer * {
 	border: 1px solid #000;
 }*/
 
@@ -189,6 +195,10 @@ footer .col-lg-3, .pos {
 	align-items: center;
 }
 
+.fa-phone {
+	transform: scaleX(-1);
+}
+
 .contacts i {
 	margin-left: 5px;
 	margin-bottom: 10px;
@@ -200,8 +210,8 @@ footer .col-lg-3, .pos {
 	background: #fff;
 	border-radius: 50%;
 }
-
-/*header * {
+/*
+header * {
 	border: 1px solid #000;
 }
 */
@@ -210,11 +220,7 @@ header form {
 	margin-bottom: 0.5vw;
 }
 
-.header_button i {
-	margin-right: 5px;
-}
-
-.header_button a {
+.shape {
 	padding: 0 5px;
 	border-radius: 30px;
 	font-size: 1rem;
@@ -223,7 +229,7 @@ header form {
 	margin-bottom: 0.5vw;
 }
 
-header p {
+.p-left {
 	color: #005177;
 	font-family: RotondaC;
 	font-size: calc(1.3vh + 0.7vw);
@@ -233,6 +239,54 @@ header p {
     -webkit-text-fill-color: #005177;
 }
 
-header p span {
+.p-left span {
 	font-size: calc(1.2vh + 0.6vw);
+}
+
+header i {
+	margin-right: 5px;
+}
+
+header h3 {
+	text-align: center;
+	margin: calc(10vw - 10vh) 0 0 0;
+	padding: 0;
+	font-size: calc(1.4vh + 0.8vw);
+	-webkit-text-stroke: .5px white;
+    -webkit-text-fill-color: #2d5d7e;
+	margin-bottom: 0.5vw;
+}
+
+header h3 span {
+	-webkit-text-fill-color: #4a8cbf;
+}
+
+.p-right {
+	color: #005177;
+	text-align: center;
+	font-size: calc(0.9vh + 0.4vw);	
+	margin-bottom: 0.5vw;
+}
+
+header a:hover {
+	text-decoration: none;
+}
+
+.call_us img {
+	width: 100%;
+}
+
+nav {
+	width: 100%;
+}
+
+nav * {
+	text-align: center;
+}
+
+nav button:focus {
+	transition: 1s ease-in-out;
+	transform: scaleX(3);
+
+	border:none;
 }
