@@ -66,6 +66,10 @@ footer {
 	color: #2d5d7e;
 }
 
+.name a:hover {
+	text-decoration-color: #2d5d7e;
+}
+
 .content ul {
 	padding: 0 10px;
 	text-align: left;
@@ -210,6 +214,10 @@ footer .col-lg-3, .pos {
 	background: #fff;
 	border-radius: 50%;
 }
+
+.contacts i:hover {
+	color: #2d5d7e;
+}
 /*
 header * {
 	border: 1px solid #000;
@@ -218,6 +226,10 @@ header * {
 header form {
 	margin-top: calc(10vw - 10vh);
 	margin-bottom: 0.5vw;
+}
+
+header a:hover {
+	color: #005177;
 }
 
 .shape {
@@ -282,4 +294,69 @@ nav {
 
 nav * {
 	text-align: center;
+}
+
+
+/*------------Коляски-----------*/
+
+.car main .navigation,a,h2 {
+	color: #2d5d7e;
+}
+
+.sort {
+	background: url(../images/бланк_сорт.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	padding: 10px 35px;
+	margin-bottom: 1vw;
+}
+
+.sort * {
+	color: #000;
+	padding: 10px;
+}
+
+.sort span {
+	margin-right: auto;
+}
+
+.sort a {
+	border-left: 2px solid #fbf3eb;
+}
+
+.sort a:hover {
+	transition: 0.5s;
+	color: #000;
+	text-decoration: none;
+	background: #d6edf4;
+}
+
+/*.item * {
+	border: 1px solid #000;
+}*/
+
+.item .row {
+	padding: 5% 0;
+	background: url(../images/item.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.item img {
+	width: 100%;
+}
+
+.line {
+	border-bottom: 1px dashed grey;
+	display: flex;
+	flex-direction: row;
+	font-size: calc(0.6vh + 0.8vw);
+}
+
+.line .feature {
+	width: 70%;
+}
+
+.line .value {
+	width: 30%;
 }
