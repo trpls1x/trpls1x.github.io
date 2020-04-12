@@ -138,6 +138,10 @@ footer {
 	padding: 0 10px;
 }
 
+.blank input {
+	margin-right: 5px;
+}
+
 .shipping {/*
 	border: 1px solid #000;*/
 	margin-top: 1rem;
@@ -458,13 +462,13 @@ nav * {
 	padding: 3px 10px;
 }
 
-.filter p {
+.price-filter p {
 	width: 50%;
 	display: flex;
 	align-items: center;
 }
 
-.filter input {
+.price-filter input {
 	text-align: center;
 	border: 1px solid #e6e6e6;
 	background: #f3f3f3;
@@ -475,7 +479,7 @@ nav * {
 	height: 80%;
 }
 
-.filter input:focus {
+.price-filter input:focus {
 	outline: none;
 }
 
@@ -505,4 +509,22 @@ nav * {
 
 .ui-slider .ui-slider-handle:focus {
 	outline: none;
+}
+
+.filter>ul>li>span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.filter>ul>li>i:hover {
+	cursor: pointer;
+}
+
+.filter>ul>li .child {
+	display: none;
+	margin-left: 20px;
+}
+
+.filter>ul>li.active .child {
+	display: block;
 }

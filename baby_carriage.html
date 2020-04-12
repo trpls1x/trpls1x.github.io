@@ -442,7 +442,7 @@
 
 					<div class="blank">
 						<h4>Цена, грн.</h4>
-						<div class="filter d-flex">
+						<div class="price-filter d-flex">
 							<p class="d-flex">
 							  	<label for="amount-1" class="m-2">от</label>
 							  	<input type="text" id="amount-1" readonly>
@@ -467,6 +467,68 @@
 							<li><input type="checkbox" name="option7" value="7">Защита от дождя и солнца</li>
 							<li><input type="checkbox" name="option8" value="8">Сумки к коляскам</li>
 							<li><input type="checkbox" name="option9" value="9">Запчасти</li>
+						</ul>
+					</div>
+
+					<div class="blank">
+						<h4>Бренды</h4>
+						<ul>
+							<li><input type="checkbox" name="option1" value="1">ABC Design</li>
+							<li><input type="checkbox" name="option2" value="2">Adamex</li>
+							<li><input type="checkbox" name="option3" value="3">Androx</li>
+							<li><input type="checkbox" name="option4" value="4">Aneco</li>
+							<li><input type="checkbox" name="option5" value="5">Anmar</li>
+							<li><input type="checkbox" name="option6" value="6">Baby car (Беби кар)</li>
+							<li><input type="checkbox" name="option7" value="7">Britax</li>
+							<li><input type="checkbox" name="option8" value="8">Capella</li>
+							<li><input type="checkbox" name="option9" value="9">Chicco</li>
+							<li><input type="checkbox" name="option10" value="10">Navington</li>
+							<li><input type="checkbox" name="option11" value="11">Peg Perego (Пег Перего)</li>
+						</ul>
+					</div>
+
+					<div class="blank filter">
+						<h4>Характеристики</h4>
+						<ul>
+							<li>
+								<i class="far fa-plus-square m-1"></i><span>Механизм складывания</span>
+								<ul class="child">
+									<li>Трость</li>
+									<li>Механический</li>
+									<li>Отсутствует</li>
+								</ul>
+							</li>
+							<li>
+								<i class="far fa-plus-square m-1"></i><span>Количество колес</span>
+								<ul class="child">
+									<li>4</li>
+									<li>6</li>
+									<li>8</li>
+								</ul>
+							</li>
+							<li>
+								<i class="far fa-plus-square m-1"></i><span>Колеса</span>
+								<ul class="child">
+									<li>Резиновые</li>
+									<li>Пластиковые</li>
+								</ul>
+							</li>
+							<li>
+								<i class="far fa-plus-square m-1"></i><span>Максимальный возраст</span>
+								<ul class="child">
+									<li>до 3 лет</li>
+									<li>до 6 лет</li>
+									<li>до 12 лет</li>
+								</ul>
+							</li>
+							<li>
+								<i class="far fa-plus-square m-1"></i><span>Wвет</span>
+								<ul class="child">
+									<li>Красный</li>
+									<li>Зеленый</li>
+									<li>Синий</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -527,6 +589,22 @@
 		    $( "#amount-1" ).val($( "#slider-range" ).slider( "values", 0 ));
 		    $( "#amount-2" ).val($( "#slider-range" ).slider( "values", 1 ));
 		} );
+	</script>
+	<script>
+		$(function(){
+			$('.filter > ul > li').click(function(){
+				if($(this).hasClass('active')){
+					$(this).removeClass('active');
+					$(this.children[0]).addClass('fa-plus-square');
+					$(this.children[0]).removeClass('fa-minus-square');
+					
+				}else{
+					$(this).addClass('active');
+					$(this.children[0]).addClass('fa-minus-square');
+					$(this.children[0]).removeClass('fa-plus-square');
+				}
+			})
+		});
 	</script>
 </body>
 
