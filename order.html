@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body class="baby-care">
+<body>
 	<header>
 		<div class="container">
 			<div class="row no-gutters">
@@ -62,7 +62,6 @@
 						<li class="nav-item"><a href="#" class="nav-link">О компании</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">Доставка</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">Заказать обратный звонок</a></li>
-						<li class="nav-item"><a href="order.html" class="nav-link">Корзина <span class="badge badge-primary">7</span></a></li>
 					</ul>
 					<hr>
 					<span class="navbar-text">Пн-Пт: 9<sup>00</sup>-20<sup>00</sup> Сб-Вс: 10<sup>00</sup>-20<sup>00</sup></span> <br>
@@ -72,75 +71,62 @@
 		</div>
 	</div>
 
-	<main class="item-page">
-		<div class="container">
-			<p class="navigation">
-				<a href="index.html">Главная</a> » 
-				<a href="#">Товары для детей</a> » 
-				<a href="baby_carriage.html">Коляски</a> »
-				<a href="#">Детские коляски</a>
-			</p>
+	<main>
+		<div class="top container p-0">
+			<img src="images/заказ_топ.png" alt="" class="img-responsive">
+		</div>
+		<div class="order container pl-5 pr-5">
+			<div class="row d-flex">
+				<div class="col-10 offset-1 pl-lg-5 pr-lg-5">
+					<h1 class="text-center d-none d-sm-block mb-5">Оформление<br>заказа</h1>
+					<h3 class="text-center d-block d-sm-none mb-3">Оформление<br>заказа</h3>
+					<div class="form-group pt-0 pt-lg-4">
+						<label for="fio" class="d-none d-md-block">ФИО: </label>
+						<input type="text" class="form-control" id="fio" placeholder="Сисисьтик Илья Павлович">
+					</div>
 
-			<h3>Коляска-трансформер Baby Care Manhattan Air</h3>
+					<div class="form-group">
+						<label for="tel" class="d-none d-md-block">Телефон: </label>
+						<input type="text" class="form-control" id="tel" placeholder="Ваш номер телефона">
+					</div>
 
-			<div class="row mt-3 mb-5">
-				<div class="col-10 col-md-5 offset-1 offset-md-0">
-					<img src="images/коляска1.png" alt="коляска" class="img-responsive">
-				</div>
+					<div class="form-group">
+						<label for="email" class="d-none d-md-block">E-mail: </label>
+						<input type="email" class="form-control" id="email" placeholder="Ваша почта">
+					</div>
 
-				<div class="col-12 col-md-7 ">
-					<div class="row justify-content-center justify-content-md-start mt-3 pl-lg-4">
-						<div class="col-lg-4 col-6 text-center">
-							<h5>Стоимость</h5>
-							<div class="price d-flex justify-content-center mb-2">
-								<span>14590 грн.</span>
-							</div>	
-						</div>
-						<div class="col-12">
-							<div class="line d-flex">
-								<div class="feature">Количество блоков</div>
-								<div class="value">Один</div>
-							</div>
-							<div class="line d-flex">
-								<div class="feature">Механизм складывания</div>
-								<div class="value">Трость</div>
-							</div>
-							<div class="line d-flex">
-								<div class="feature">Количество колес</div>
-								<div class="value">8</div>
-							</div>
-							<div class="line d-flex">
-								<div class="feature">Колеса</div>
-								<div class="value">Резиновые</div>
-							</div>
-							<div class="line d-flex">
-								<div class="feature">Максимальный возраст</div>
-								<div class="value">3 года</div>
-							</div>
-							<div class="line d-flex">
-								<div class="feature">Цвет</div>
-								<div class="value">Синий</div>
-							</div>
-						</div>
-						<div class="stock col-12 col-sm-6 col-lg-12 justify-content-center justify-content-lg-start">
-							<span class="text-success"><i class="fas fa-check-circle"></i> В наличии</span>
-						</div>
-						<div class="col-6 col-lg-5">
-							<a href="order.html" class="basket d-flex justify-content-center">
-								<span><i class="fas fa-shopping-basket"></i> купить</span>
-							</a>
-						</div>
+					<p class="pb-3">Ваш заказ:</p>
+
+					<div class="pb-3">
+						<a href="order.html" class="basket">
+							<span>оформить заказ</span>
+						</a>
+					</div>
+
+					<p class="reg">Регистрация обязательна для следующих действий:</p>
+					<ul class="pl-3">
+						<li>активация скидочного купона</li>
+						<li>получение бонусных баллов за покупки</li>
+						<li>оплаты заказа через интернет</li>
+						<li>оформление заказа на организацию</li>
+					</ul>
+
+					<div class="form-check">
+					  	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  	<label class="form-check-label" for="exampleRadios1">покупка с регистрацией</label>
+					</div>
+					<div class="form-check">
+					  	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+					  	<label class="form-check-label" for="exampleRadios2"> вход для зарегестрированных пользователей</label>
 					</div>
 				</div>
 			</div>
-			
-			<h5>Описание</h5>
-			<p class="text-justify">
-				Коляска Silver Cross Balmoral — настоящее произведение искусства. Этапы производства в этой коляске включают операции, выполняемые вручную. <br> Селин Дион, Кэтрин Зета-Джонс, британский премьер Тони Блэр, принцесса Монако Каролина, Мик Джагер, Бэкхемы, Роберт де Ниро, Брук Шилдс, Лиз Херли, Питер Гебриэл, Эль Макферсон и другие Celebrity-персоны для своих детей выбирают коляски фирмы Silver Cross.
-			</p>
+		</div>
+		<div class="bot container p-0">
+			<img src="images/заказ_бот.png" alt="" class="img-responsive">
 		</div>
 	</main>
-	
+
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -175,7 +161,8 @@
 		</div>
 	</footer>
 
+
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

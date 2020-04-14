@@ -426,6 +426,11 @@ footer .col-lg-3, .pos {
 	margin: 10px 0;
 }
 
+.basket:hover {
+	color: #000;
+	text-decoration: none
+}
+
 .page-nav {
 	margin-top: 30px;
 	background: url(../images/бланк_сорт.png);
@@ -579,4 +584,46 @@ footer .col-lg-3, .pos {
 .item-page .stock {
 	display: flex;
 	align-items: center;
+}
+
+
+/*-------------------------------------------------------------------Заказ------------------------------------------------*/
+
+.top img, .bot img {
+	width: 100%;
+	pointer-events: none;
+}
+
+.order {
+	background: url(../images/заказ_мид.png) no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% 100%;
+}
+
+.order h1, h3{
+	color: #2d5d7e;
+}
+
+.order .form-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-group label {
+	font-size: 20px;
+	width: 22%;
+}
+
+.form-group input {
+	padding: 0 30px;
+}
+
+.order p {
+	margin-bottom: 0;
+	font-size: 20px;
+}
+
+.order a {
+	font-size: 18px;
+	font-weight: bold;
 }
