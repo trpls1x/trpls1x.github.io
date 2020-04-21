@@ -115,6 +115,10 @@ nav * {
 	align-items: flex-end;
 }
 
+.logo a {
+	width: 100%;
+}
+
 .logo img {
 	width: 100%;
 }
@@ -189,19 +193,19 @@ footer .col-lg-3, .pos {
 	text-decoration-color: #2d5d7e;
 }
 
-.content ul {
+.fill ul {
 	padding: 0 10px;
 	text-align: left;
 	list-style: none outside;
 }
 
-.content h6 {
+.fill h6 {
 	font-weight: 600;
 	padding: 0 10px;
 	margin: 0;
 }
 
-.content a {
+.fill a {
 	color: #000;
 	font-size: 1rem;
 }
@@ -348,36 +352,36 @@ footer .col-lg-3, .pos {
 	border-left: 1px solid #000;
 }
 
-.item {
+.prod {
 	margin-top: 30px;
 }
 
-.item>a {
+.prod>a {
 	color: #000;
 }
 
-.item>a:hover {
+.prod>a:hover {
 	color: #000;
 }
 
-.item>.row {
+.prod>.row {
 	padding: 8% 0;
 	background: url(../images/item.png);
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
 
-.item .no-gutters * {
+.prod .no-gutters * {
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.item img {
+.prod img {
 	width: 100%;
 }
 
-.item i {
+.prod i {
 	margin-right: 5px;
 }
 
@@ -597,7 +601,7 @@ footer .col-lg-3, .pos {
 .order {
 	background: url(../images/заказ_мид.png) no-repeat;
 	-webkit-background-size: 100% auto;
-	background-size: 100% 100%;
+	background-size: 100% 100%;padding-bottom: 5vw;
 }
 
 .order h1, h3{
