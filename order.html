@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ты гусь</title>
+	<title>Два гуся</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -97,8 +97,8 @@
 
 					<p class="pb-3">Ваш заказ:</p>
 
-					<div class="row item-to-buy">
-						.col
+					<div id="content">
+						
 					</div>
 
 					<div class="pb-3">
@@ -172,5 +172,20 @@
 	<script src="js/jquery.tmpl.min.js"></script>
 	<script src="js/jquery.cookie.js"></script>
 	<script src="js/my.js"></script>
+
+	<script id="cartTmpl" type="text/x-jquery-tmpl">
+		{{each cart}}
+			<div class="row item-to-buy p-4">
+				<div class="col-12 col-md-6"><a href="baby_care.html#cat_id=5&id=${id}">${title}</a></div>
+				<div class="col-4 col-md-2">${qty} шт.</div>
+				<div class="col-5 col-md-3 font-weight-bold">${totalprice} грн.</div>
+				<div class="col-1 m-auto text-secondary"><i class="fas fa-times-circle cross" data-id="${id}"></i></div>
+			</div>
+		{{/each}}
+	</script>
+
+	<script>
+		new MyShop('products.xml', 'cart');
+	</script>
 </body>
 </html>

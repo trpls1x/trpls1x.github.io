@@ -29,20 +29,26 @@ class MyShop{
 				th.printProduct(products[th.route()['id']]);
 			}	
 			if(type=='cart' && $.cookie('products')){
-				var cartProds = {};
 				var cookieProds = JSON.parse($.cookie('products'));
 				if(cookieProds){
 					$.each(cookieProds, function(i,v){
 						//додаємо кількість
 						products[i]['qty'] = v;
+						var price = parseInt(products[i].price);
+						products[i]['totalprice'] = price * v;
 					});
-					// метод, який виведе товари до корзини
-					var cart = {};
-					cart['cart'] = products;
-					th.printCart(cart);
+				}
+
+				$.each(products, function(i,v) {
+					if(typeof products[i].qty != 'number') {
+						delete products[i];
+					}
+				});
+
+				var cart = {};
+				cart['cart'] = products;
+				th.printCart(cart);
 			}
-			}					
-			
 		});
 	}
 
@@ -100,7 +106,22 @@ $('html').on('click','.buy',function(){
 	//записуємо масив у кукі у форматі json
 	$.cookie('products',JSON.stringify(products));
 
-	alert('Товар '+name+' в количестве '+count+' шт. успешно добавлен в корзину! ');	
-	$(this).after('<p><a href="'+link+'">Просмотреть корзину</a></p>');
+	alert('Товар '+name+' в количестве '+count+' шт. успешно добавлен в корзину! ');
+	if($(this).hasClass('haslink')){
+	}else{
+		$(this).addClass('haslink')
+		$(this).after('<p><a href="'+link+'">Просмотреть корзину</a></p>');
+	}
+	return false;
+});
+
+$('html').on('click','.cross',function(){
+	var id = $(this).data('id');
+
+	if($.cookie('products')) products = JSON.parse($.cookie('products'));
+	delete products[id];
+	location.reload();
+
+	$.cookie('products',JSON.stringify(products));
 	return false;
 });

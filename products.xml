@@ -2,7 +2,7 @@
 	<product id='1'>
 		<title>Коляска для двойни Pudge</title>
 		<oldprice>25000 грн.</oldprice>
-		<price>23000 грн.</price>
+		<price>23000</price>
 		<image>коляска1.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -14,7 +14,7 @@
 	<product id='2'>
 		<title>Коляска для двойни Mashulya</title>
 		<oldprice>10000 грн.</oldprice>
-		<price>7745 грн.</price>
+		<price>7745</price>
 		<image>коляска2.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -26,7 +26,7 @@
 	<product id='3'>
 		<title>Коляска для двойни Sniper</title>
 		<oldprice>7000 грн.</oldprice>
-		<price>4700 грн.</price>
+		<price>4700</price>
 		<image>коляска3.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -38,7 +38,7 @@
 	<product id='4'>
 		<title>Коляска для двойни Wraith King</title>
 		<oldprice>15000 грн.</oldprice>
-		<price>13000 грн.</price>
+		<price>13000</price>
 		<image>коляска4.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -50,7 +50,7 @@
 	<product id='5'>
 		<title>Коляска для двойни Meepo</title>
 		<oldprice>7000 грн.</oldprice>
-		<price>6300 грн.</price>
+		<price>6300</price>
 		<image>коляска5.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -62,7 +62,7 @@
 	<product id='6'>
 		<title>Коляска для двойни Anti-Mage</title>
 		<oldprice>15000 грн.</oldprice>
-		<price>12900 грн.</price>
+		<price>12900</price>
 		<image>коляска1.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -74,7 +74,7 @@
 	<product id='7'>
 		<title>Коляска для двойни Denis</title>
 		<oldprice>15000 грн.</oldprice>
-		<price>13000 грн.</price>
+		<price>13000</price>
 		<image>коляска2.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -86,7 +86,7 @@
 	<product id='8'>
 		<title>Коляска для двойни Invoker</title>
 		<oldprice>14500 грн.</oldprice>
-		<price>13000 грн.</price>
+		<price>13000</price>
 		<image>коляска3.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -98,7 +98,7 @@
 	<product id='9'>
 		<title>Коляска для двойни Rikimaru</title>
 		<oldprice>20000 грн.</oldprice>
-		<price>13900 грн.</price>
+		<price>13900</price>
 		<image>коляска4.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>
@@ -110,7 +110,7 @@
 	<product id='10'>
 		<title>Коляска для двойни Huskar</title>
 		<oldprice>16000 грн.</oldprice>
-		<price>14000 грн.</price>
+		<price>14000</price>
 		<image>коляска5.png</image>
 		<blocks>Два</blocks>
 		<mechanism>Трость</mechanism>

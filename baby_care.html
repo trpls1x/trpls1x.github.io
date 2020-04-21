@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ты гусь</title>
+	<title>Два гуся</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -146,7 +146,7 @@
 					<div class="col-lg-4 col-6 text-center">
 						<h5>Стоимость</h5>
 						<div class="price d-flex justify-content-center mb-2">
-							<span>${price}</span>
+							<span>${price} грн.</span>
 						</div>	
 					</div>
 					<div class="col-12">
@@ -178,8 +178,8 @@
 					<div class="stock col-12 col-sm-6 col-lg-12 justify-content-center justify-content-lg-start">
 						<span class="text-success"><i class="fas fa-check-circle"></i> В наличии</span>
 					</div>
-					<div class="col-6 col-lg-5">
-						<a href="order.html" class="basket d-flex justify-content-center">
+					<div class="col-12 col-sm-6 col-lg-5">
+						<a href=#" data-id="${id}" data-name="${title}" data-link="/order.html" class="basket buy d-flex justify-content-center">
 							<span><i class="fas fa-shopping-basket"></i> купить</span>
 						</a>
 					</div>
@@ -189,7 +189,7 @@
 	</script>
 
 	<script>
-		new MyShop('products.xml','product')
+		new MyShop('products.xml','product');
 	</script>
 </body>
 </html>

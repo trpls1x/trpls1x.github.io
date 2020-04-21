@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ты гусь</title>
+	<title>Два гуся</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -130,7 +130,7 @@
 					<div class="shopping-cart d-none d-lg-block">
 						<p>В Вашей корзине</p>
 						<p class="sum">7 товаров на сумму 1488 грн.</p>
-						<button type="button" class="btn btn-dark btn-sm">оформить</button>
+						<a href="order.html"><button type="button" class="btn btn-primary btn-sm">оформить</button></a>
 					</div>
 
 					<div class="blank">
@@ -447,11 +447,11 @@
 								<s>${oldprice}</s>
 							</div>
 							<div class="price">
-								<span>${price}</span>
+								<span>${price} грн.</span>
 							</div>	
 						</div>
 						<div class="col-12 col-sm-4 col-lg-12">
-							<a href="order.html" class="basket">
+							<a href=#" data-id="${id}" data-name="${title}" data-link="/order.html" class="basket buy">
 								<span><i class="fas fa-shopping-basket"></i> в корзину</span>
 							</a>
 						</div>
@@ -462,7 +462,7 @@
 	</script> <!--xml-->
 
 	<script>
-		new MyShop('products.xml','category')
+		new MyShop('products.xml','category');
 	</script>
 </body>
 
