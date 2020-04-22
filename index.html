@@ -404,5 +404,15 @@
 	<script src="js/jquery.tmpl.min.js"></script>
 	<script src="js/jquery.cookie.js"></script>
 	<script src="js/my.js"></script>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+			.register('/sw.js')
+			.then(function() {
+				console.log('Service worker registred!');
+			});
+		};
+	</script>
 </body>
 </html>
