@@ -287,55 +287,10 @@
 						</div>
 						<div class="brands blank">
 							<h4>Список брендов</h4>
-							<div class="row">
+							<div class="row"> <!--бланк с брендами делаем row и разбиваем на 2 колонки-->
 								<div class="col">
-									<ul>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-									</ul>
-								</div>
-								<div class="col">
-									<ul>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-										<li><a href="https://mbk.media/">link</a></li>
-									</ul>
-								</div>
+									
+								</div> <!--тут бренды-->
 							</div>			
 						</div>
 					</div>
@@ -413,6 +368,24 @@
 				console.log('Service worker registred!');
 			});
 		};
+	</script>
+
+	<script>
+		fetch('https://restcountries.eu/rest/v2/regionalbloc/eu')
+		.then ((response) =>  {
+			return response.json();
+		})
+		.then((resp) => {
+			var listOfCapitals=document.createElement('ul');
+			resp.forEach(function(item) {
+				var listViewItem=document.createElement('li');
+				listViewItem.appendChild(document.createTextNode(item.capital));
+				listOfCapitals.appendChild(listViewItem);
+			});
+			listOfCapitals.style.columnCount=2;
+			document.getElementsByClassName("brands")[0].getElementsByClassName("col")[0].appendChild(listOfCapitals);
+		})
+		;
 	</script>
 </body>
 </html>
