@@ -36,6 +36,9 @@
 						<div class="col-6 d-flex justify-content-end">
 							<a href="https://mbk.media/" class="shape"><i class="fas fa-truck"></i>Доставка</a>
 						</div>
+						<button class="col-12 d-flex justify-content-center subscription-button shape">
+							<i class="fas fa-bell"></i>Notifications
+						</button>
 					</div> <!--левая часть хедера-->
 
 					<p class="p-left">Товары наши хороши - <br><span>развивайтесь малыши!</span></p>
@@ -70,9 +73,13 @@
 					<hr>
 					<span class="navbar-text">Пн-Пт: 9<sup>00</sup>-20<sup>00</sup> Сб-Вс: 10<sup>00</sup>-20<sup>00</sup></span> <br>
 					<span class="navbar-text">38 (098) 704 1488</span>
+					<button class="d-lg-none col-12 d-flex justify-content-center phone-subscription-button shape">
+						<i class="fas fa-bell"></i>Notifications
+					</button>
 				</div>
 			</nav>
 		</div>
+		
 	</div>
 
 	<main>
@@ -365,10 +372,10 @@
 			navigator.serviceWorker
 			.register('/sw.js')
 			.then(function() {
-				console.log('Service worker registred!');
+				console.log('Service worker registered!');
 			});
 		};
-	</script>
+	</script> <!--service worker-->
 
 	<script>
 		fetch('https://restcountries.eu/rest/v2/regionalbloc/eu')
@@ -386,6 +393,46 @@
 			document.getElementsByClassName("brands")[0].getElementsByClassName("col")[0].appendChild(listOfCapitals);
 		})
 		;
+	</script> <!--API столиц-->
+
+	<script>
+		function askPermission() {
+			return new Promise(function(resolve, reject) {
+				const permissionResult = Notification.requestPermission(function(result) { 
+					resolve(result);
+				});
+
+				if (permissionResult) {
+					permissionResult.then(resolve,reject);
+				}
+			})
+			.then(function(permissionResult) {
+				if(permissionResult !== 'granted') {
+					throw new Error('We weren\'t granted permission.');
+				}
+			});
+		}
+
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+			.register('/sw.js')
+			.then(function() {
+				console.log('Service worker registered!');
+			});
+
+			navigator.serviceWorker.ready.then(registration => {
+				if ('PushManager' in window) {
+					document.querySelector('button.subscription-button')
+					.addEventListener('click', () => {
+						askPermission();	
+					});
+					document.querySelector('button.phone-subscription-button')
+					.addEventListener('click', () => {
+						askPermission();	
+					});
+				}
+			});
+		}
 	</script>
 </body>
 </html>
