@@ -1,650 +1,92 @@
-@font-face {
-    font-family: RotondaC;
-    src: url("../fonts/rotondac-bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Trebuchet;
-    src: url("../fonts/Trebuchet.ttf") format("opentype");
-}
-
-h1,h2,h3,h4,h5 {
-	font-family: RotondaC;
-}
-
-h4 {
-	font-size:1.5rem;
-	margin-left: 5%;
-	color: #2d5d7e;
-}
-
-body {
-	-webkit-overflow-scrolling: touch;
-	background: #fbf3eb;
-	font-family: Trebuchet;
-}
-
-/*--------------------------------------------------------------------------Хедер------------------------------------------------------------------------------*/
-
-header {
-	background: url(../images/header.png) repeat-x;
-	padding-top: 1.1vw;
-	margin-bottom: 1vw;
-	-webkit-background-size: auto 100%;
-	background-size: auto 100%;
-}
-
-header form {
-	margin-top: calc(10vw - 10vh);
-	margin-bottom: 0.5vw;
-}
-
-header a:hover {
-	color: #005177;
-}
-
-.shape {
-	padding: 0 5px;
-	border-radius: 30px;
-	font-size: 1rem;
-	color: #005177;
-	background: #eff5f8;
-	margin-bottom: 0.5vw;
-}
-
-.p-left {
-	color: #005177;
-	font-family: RotondaC;
-	font-size: calc(1.3vh + 0.7vw);
-	line-height: 3vh;
-	text-align: center;
-	-webkit-text-stroke: 1.2px white;
-    -webkit-text-fill-color: #005177;
-}
-
-.p-left span {
-	font-size: calc(1.2vh + 0.6vw);
-}
-
-header i {
-	margin-right: 5px;
-}
-
-header h3 {
-	text-align: center;
-	margin: calc(10vw - 10vh) 0 0 0;
-	padding: 0;
-	font-size: calc(1.4vh + 0.8vw);
-	-webkit-text-stroke: .5px white;
-    -webkit-text-fill-color: #2d5d7e;
-	margin-bottom: 0.5vw;
-}
-
-header h3 span {
-	-webkit-text-fill-color: #4a8cbf;
-}
-
-.p-right {
-	color: #005177;
-	text-align: center;
-	font-size: calc(0.9vh + 0.4vw);	
-	margin-bottom: 0.5vw;
-}
-
-header a:hover {
-	text-decoration: none;
-}
-
-.call_us img {
-	width: 100%;
-}
-
-nav {
-	width: 100%;
-}
-
-nav * {
-	text-align: center;
-}
-
-.logo {
-	height: 20vw;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-}
-
-.logo a {
-	width: 100%;
-}
-
-.logo img {
-	width: 100%;
-}
-
-/*--------------------------------------------------------------------------Футер------------------------------------------------------------------------------*/
-
-footer {
-	background: url(../images/footer.png);
-	-webkit-background-size: cover;
-	background-size: cover;
-	margin-top: 2vh;
-	min-height: 13rem;
-
-	display: flex;
-	align-items: flex-end;
-}
-
-footer h5 {
-	text-align: center;
-	font-size: 1.3rem;
-	color: #2d5d7e;
-}
-
-footer span {
-	color: #06465f;
-}
-
-footer .row {
-	padding-top: 10px;
-}
-
-footer .col-lg-3, .pos {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.fa-phone {
-	transform: scaleX(-1);
-}
-
-.contacts i {
-	margin-left: 5px;
-	margin-bottom: 10px;
-	text-align: center;
-	line-height: 170%;
-	height: 30px;
-	width: 30px;
-	color: #afcede;
-	background: #fff;
-	border-radius: 50%;
-}
-
-.contacts i:hover {
-	color: #2d5d7e;
-}
-
-/*------------------------------------------------------------------------------Главная-----------------------------------------------------------------------*/
-
-.name {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.name h5 {
-	margin-left: 10px;
-	color: #2d5d7e;
-}
-
-.name a:hover {
-	text-decoration-color: #2d5d7e;
-}
-
-.fill ul {
-	padding: 0 10px;
-	text-align: left;
-	list-style: none outside;
-}
-
-.fill h6 {
-	font-weight: 600;
-	padding: 0 10px;
-	margin: 0;
-}
-
-.fill a {
-	color: #000;
-	font-size: 1rem;
-}
-
-.shopping-cart {/*
-	border: 1px solid #000;*/
-	padding: 15% 20%;
-	width: 100%;
-	background: url(../images/корзина.png) no-repeat center/100%;
-	-webkit-background-size: contain;
-	background-size: contain;
-}
-
-.shopping-cart p {
-	margin: 0;
-	font-size: calc(0.2vw + 1.5vh);
-}
-
-.sum  {
-	font-weight: bold;
-}
-
-.shopping-cart button {
-	background: #3da0d1;
-	line-height: 10%;
-	height: 1.5rem;
-	font-family: RotondaC;
-	font-weight: bold;
-	border-radius: 3rem;
-	border: 2px solid #c5e5f9;
-	margin-top: 2%;
-}
-
-.shopping-cart button:hover {
-	background: #278dc0;
-	border: 2px solid #3da0d1;
-}
-
-.blank {
-	margin-top: 1rem;
-	margin-left: 1rem;
-	padding: 2rem 1rem;
-	height: auto;
-	background: url(../images/бланк.png) no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	padding-bottom:10%;
-}
-
-.blank ul {
-	list-style: none;
-	padding: 0 10px;
-}
-
-.blank input {
-	margin-right: 5px;
-}
-
-.shipping {/*
-	border: 1px solid #000;*/
-	margin-top: 1rem;
-	margin-left: 1rem;
-}
-
-.shipping img {
-	width: 100%;
-}
-
-.date {
-	background: url(../images/дата.png) no-repeat;
-	background-size: 100% 100%;
-	width: 50%;
-	height: 2rem;
-	line-height: 200%;
-	text-align: center;
-	color: #fff;
-	font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
 
-.news h6 {
-	margin: 0;
-	padding: .5rem 0;
-	font-weight: normal;
-	text-decoration: underline;
-	color: #2d5d7e;
+html, body {
+    font-family: Mukta;
 }
 
-.news a {
-	text-decoration: underline;
-}
-
-.news>a {
-	color: #2d5d7e;
-}
-
-.banner img {
-	width: 100%
-}
-
-/*----------------------------------------------------------------------------------Коляски----------------------------------------------------------------------*/
-
-.car main .navigation,a,h2 {
-	color: #2d5d7e;
-}
-
-.navigation a:hover {
-	color: #2d5d7e;
-}
-
-.sort {
-	background: url(../images/бланк_сорт.png);
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	padding: 10px 3%;
-	margin-bottom: 1vw;
-}
-
-.sort * {
-	color: #000;
-	padding: 10px;
-}
-
-.sort i {
-	height: 100%;
-	width: auto;
-	color: #000;
-}
-
-.sort a {
-	border-left: 2px solid #fbf3eb;
-}
-
-.sort a:hover {
-	transition: 0.5s;
-	color: #000;
-	text-decoration: none;
-	background: #d6edf4;
-}
-
-.sort select {
-	width: 190px;
-	border: none;
-	border-left: 1px solid #000;
-}
-
-.prod {
-	margin-top: 30px;
-}
-
-.prod>a {
-	color: #000;
-}
-
-.prod>a:hover {
-	color: #000;
-}
-
-.prod>.row {
-	padding: 8% 0;
-	background: url(../images/item.png);
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.prod .no-gutters * {
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.prod img {
-	width: 100%;
-}
-
-.prod i {
-	margin-right: 5px;
-}
-
-.line {
-	border-bottom: 1px dashed grey;
-}
-
-.line .feature {
-	width: 70%;
-}
-
-.line .value {
-	width: 30%;
-}
-
-.line:last-child {
-	border: none;
-	margin-bottom: 20px;
-}
-
-.stock {
-	font-size: 20px;
-}
-
-.price {
-	font-family: RotondaC;
-	font-size: 19px;
-	color:white;
-	padding: 10px 20px;
-	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 65%);
-	border-radius: 25px 0 25px 0;
-	border: 2px dotted #279bd9;
-	width: 95%;
-}
-
-.basket {
-	font-family: RotondaC;
-	color: #383431;
-	padding: 10px 20px;
-	background: rgb(255,166,0);
-	background: linear-gradient(0deg, rgba(255,166,0,1) 0%, rgba(255,226,0,1) 70%);
-	border-radius: 25px 0 25px 0;
-	border: 2px dotted #ffa600;
-	width: 95%;
-	margin: 10px 0;
-}
+/*------------------------------------------------------header----------------------------------------------------*/
 
-.basket:hover {
-	color: #000;
-	text-decoration: none
+.navbar {
+    height: 100px;
+    padding: 0;
 }
 
-.page-nav {
-	margin-top: 30px;
-	background: url(../images/бланк_сорт.png);
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	padding: 3% 3%;
+.navbar, .navbar-collapse {
+    background: #fff!important;
 }
 
-.page-nav a {
-	background: #cae5ee;
-	color: #000;
-	text-decoration: none;
-	text-align: center;
-	margin-right: 5px;
+.navbar-collapse, .navbar-brand {
+    padding-left: 5vw;
 }
 
-.page-nav a:first-child {
-	margin-right: 10px;
+.navbar-toggler:focus {
+    outline: none;
 }
 
-.forward {
-	margin-left: 5px;
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.dots {
-	background: #cae5ee;
-	text-align: center;
-	margin-right: 5px;
+.nav-item {
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.page-nav a:hover {
-	transition: 0.2s;
-	background: #afcede;
-	color: #000;
-	text-decoration: none;
+.navbar-nav, .navbar-toggler {
+    margin-right: 5vw;
 }
 
-.rounded-circle {
-	height: 30px;
-	width: 30px;
-	padding: 5px;
-}
-
-.rounded-pill {
-	padding: 3px 10px;
-}
-
-.price-filter p {
-	width: 50%;
-	display: flex;
-	align-items: center;
-}
-
-.price-filter input {
-	text-align: center;
-	border: 1px solid #e6e6e6;
-	background: #f3f3f3;
-	color:#000; 
-	font-family: RotondaC;
-	font-weight: 500; 
-	width: 100%;
-	height: 80%;
-}
-
-.price-filter input:focus {
-	outline: none;
-}
-
-.ui-slider.ui-slider-horizontal {
-    background: rgb(106,106,106);
-    background: linear-gradient(180deg, rgba(106,106,106,1) 0%, rgba(167,167,167,1) 20%, rgba(231,231,231,1) 100%);
-    width: 95%;
-    margin: 0 5%;
-    border:none;
-    border-radius: 20px;
-}
-
-.ui-slider .ui-slider-range {
-    background: rgb(255,136,0);
-    background: linear-gradient(0deg, rgba(255,136,0,1) 0%, rgba(255,184,0,1) 20%, rgba(255,214,0,1) 100%);
-}
-
-.ui-slider .ui-slider-handle {
-	width: 20px;
-	height: 20px;
-    border: 6px solid #e8e8e8;
-    border-radius: 50%;
-    cursor:pointer;
-    background: #b5b5b5;
-    box-shadow: -1px 1px 3px black;
-}
-
-.ui-slider .ui-slider-handle:focus {
-	outline: none;
-}
-
-.filter li span:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.filter>ul>li>i:hover {
-	cursor: pointer;
-}
-
-.filter>ul>li .child {
-	display: none;
-	margin-left: 20px;
-}
-
-.filter>ul>li.active .child {
-	transition: 1s;
-	display: block;
-}
-
-.leads {
-	width: 100%;
-	margin-top: 1rem;
-	margin-left: 1rem;
-}
-
-.leads img {
-	width: 100%;
-}
-
-/*--------------------------------------------------------------------------Товар---------------------------------------------------------------------------*/
-
-.item-page h3 {
-	color: #2d5d7e;
-	margin-bottom: 2vh;
-}
-
-.item-page img {
-	width: 100%;
-}
-
-.item-page .col-10 {
-	background: url(../images/item_bg.png) no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	padding: 7% 2%;
-}
+/*------------------------------------------------------welcome----------------------------------------------------*/
 
-.item-page .line {
-	font-size: 20px;
+.carousel, .carousel-inner, .carousel-item{
+    height: 65vw;
 }
 
-.item-page .basket {
-	font-size: 20px;
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 10px #000;
 }
 
-.item-page .stock {
-	display: flex;
-	align-items: center;
+.carousel-caption h1 {
+    font-weight: bold;
 }
 
-
-/*-------------------------------------------------------------------Заказ------------------------------------------------*/
-
-.top img, .bot img {
-	width: 100%;
-	pointer-events: none;
-}
-
-.order {
-	background: url(../images/заказ_мид.png) no-repeat;
-	-webkit-background-size: 100% auto;
-	background-size: 100% 100%;padding-bottom: 5vw;
-}
-
-.order h1, h3{
-	color: #2d5d7e;
+.carousel-item-1 {
+    background: url(../images/carousel1.JPG);
 }
 
-.order .form-group {
-	display: flex;
-	justify-content: space-between;
+.carousel-item-2 {
+    background: url(../images/carousel2.JPG);
 }
-
-.form-group label {
-	font-size: 20px;
-	width: 22%;
-}
-
-.form-group input {
-	padding: 0 30px;
+.carousel-item-1, .carousel-item-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.order p {
-	margin-bottom: 0;
-	font-size: 20px;
-}
-
-.order a {
-	font-size: 18px;
-	font-weight: bold;
-}
+@media screen and (min-width: 768px) {
+    .carousel, .carousel-inner, .carousel-item {
+        height: calc(100vh - 100px);
+    }
+    .carousel-caption h1 {
+        font-size: 500%;
+    }
 
-.item-to-buy {
-	background: url(../images/форма_заказа.png) no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	margin-bottom: 2vh;	
+    .carousel-caption h3 {
+        font-size: 300%;
+    }
 }
 
-.item-to-buy * {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+/*------------------------------------------------------About----------------------------------------------------*/
 
-.fas:hover {
-	cursor: pointer;
+.about h1 {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 700%;
+    font-weight: bolder;
+    color: #111;
 }
