@@ -8,59 +8,105 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">Boyko</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Welcome</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Social</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">  
+    <a class="navbar-brand" href="trpls1x.github.io">Boyko</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="javascript:scroll(0,0)">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Social</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="welcome" >
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item carousel-item-1 active">
-            <div class="carousel-caption">
-              <h1>Welcome</h1>
-              <h3>My name is Sasha Boyko <br> and this is my site</h3>
-            </div>
+  <div class="welcome" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-item-1 active">
+          <div class="carousel-caption">
+            <h1>Welcome</h1>
+            <h3 class="d-none d-md-block">My name is Sasha <br>and this is my site</h3>
           </div>
-          <div class="carousel-item carousel-item-2">
-            <div class="carousel-caption">
-              <h1>Hope you enjoy!</h1>
-            </div>
+        </div>
+        <div class="carousel-item carousel-item-2">
+          <div class="carousel-caption">
+            <h1 class="d-none d-md-block">Hope you <br> enjoy!</h1>
+            <h3 class="d-block d-md-none">My name is Sasha <br> and this is my site</h3>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="about" id="about">
-      <h1>About me</h1>
+  <div id="about"></div>
+  <div class="about">
+    <div class="container-fluid">
+    <h1>About me</h1>
+      <div class="row">
+        <div class="col-12 col-lg-5 order-12 order-lg-1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magni, eius atque iste ullam modi porro totam? Eligendi deleniti minus exercitationem, neque iure alias. Perferendis quia ex laudantium unde? Esse quidem minus dolor? Exercitationem sit mollitia doloremque minus autem eligendi, porro omnis impedit dolorum tempora adipisci temporibus officia, facere dolor cupiditate veniam! Tempora optio aperiam quo! Et maiores voluptatum a adipisci culpa similique molestiae voluptas sed ducimus animi nostrum pariatur, corporis accusantium atque neque quaerat minus! Itaque quaerat, vel quia veritatis at doloremque ad? Minima illum mollitia nam, nemo dolorum voluptatum modi consequatur nihil qui corporis quaerat recusandae debitis ex?</p>
+        </div>
+        <div class="col-12 col-lg-7 order-1 order-lg-12 shape"></div>
+      </div>
+      <h2>I have some skills at</h2>
+      <div class="row">
+        <div class="skill-item col-6 col-md-4 col-lg-2">
+          <img src="images/cpp.png" alt="cpp">
+        </div>
+        <div class="skill-item col-6 col-md-4 col-lg-2">
+          <img src="images/c-sharp.png" alt="cs">
+        </div>
+        <div class="skill-item col-6 col-md-4 col-lg-2">
+          <img src="images/html-5.png" alt="html">
+        </div>
+        <div class="skill-item col-6 col-md-4 col-lg-2">
+          <img src="images/css-3.png" alt="css">
+        </div>
+        <div class="skill-item col-6 col-md-4 col-lg-2">
+          <img src="images/bootstrap-4.png" alt="bootstrap">
+        </div>
+        <div class="skill-item col-6 col-md-4 col-lg-2">
+          <img src="images/javascript.png" alt="js">
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="gallery"></div>
-    <div class="socials"></div>
+  <div id="gallery"></div>
+  <div class="gallery">
+    <div class="container-fluid">
+    <h1>Gallery</h1>
+    </div>
+  </div>
+  <div class="socials"></div>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script  src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('a[href^="#"]').bind("click", function(e){
+  var anchor = $(this);
+  $('html, body').stop().animate({
+   scrollTop: $(anchor.attr("href")).offset().top
+  }, 1000);
+  e.preventDefault();
+ });
+ return false;
+    </script>
 </body>
 </html>

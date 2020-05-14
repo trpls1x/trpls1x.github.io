@@ -4,6 +4,20 @@ html, body {
     font-family: Mukta;
 }
 
+.container-fluid {
+    padding: 0 5vw;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 2vw;
+    font-size: 700%;
+    width: 100%;
+    text-align: center;
+    color: #111;
+    font-weight: bolder;
+}
+
 /*------------------------------------------------------header----------------------------------------------------*/
 
 .navbar {
@@ -31,6 +45,7 @@ html, body {
 .nav-item {
     font-size: 20px;
     font-weight: 500;
+    margin-right: 10px;
 }
 
 .navbar-nav, .navbar-toggler {
@@ -51,6 +66,8 @@ html, body {
 }
 
 .carousel-caption h1 {
+    color: #fff;
+    font-size: 300%;
     font-weight: bold;
 }
 
@@ -82,11 +99,49 @@ html, body {
 
 /*------------------------------------------------------About----------------------------------------------------*/
 
-.about h1 {
-    margin-top: 100px;
+.about h2 {
+    margin: 2vw 0;
+    font-size: 300%;
     width: 100%;
     text-align: center;
-    font-size: 700%;
-    font-weight: bolder;
     color: #111;
+    font-weight: bolder;
 }
+
+.about p {
+    font-size: 20px;
+}
+
+.shape {
+    height: 600px;
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0 100%);
+    background: url(../images/about.JPG);
+    background-size: cover;
+}
+
+.skill-item {
+	position: relative;
+    background: #f4f4f4;
+    border-radius: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid transparent;
+    background-clip: padding-box;
+}
+
+.skill-item:before {
+	content: "";
+	float: left;
+	padding-top: 100%;
+}
+
+.skill-item img {
+    width: 75%;
+    height: auto;
+}
+
+/*------------------------------------------------------Gallery----------------------------------------------------*/
+
+
