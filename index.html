@@ -6,8 +6,10 @@
     <title>Boyko</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div id="top"></div>
   <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">  
     <a class="navbar-brand" href="trpls1x.github.io">Boyko</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="javascript:scroll(0,0)">Welcome</a>
+          <a class="nav-link" href="#top">Welcome</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About me</a>
@@ -57,12 +59,18 @@
   <div id="about"></div>
   <div class="about">
     <div class="container-fluid">
-    <h1>About me</h1>
+      <h1>About me</h1>
       <div class="row">
-        <div class="col-12 col-lg-5 order-12 order-lg-1">
+        <div class="col-12 col-lg-5 order-2 order-lg-1">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magni, eius atque iste ullam modi porro totam? Eligendi deleniti minus exercitationem, neque iure alias. Perferendis quia ex laudantium unde? Esse quidem minus dolor? Exercitationem sit mollitia doloremque minus autem eligendi, porro omnis impedit dolorum tempora adipisci temporibus officia, facere dolor cupiditate veniam! Tempora optio aperiam quo! Et maiores voluptatum a adipisci culpa similique molestiae voluptas sed ducimus animi nostrum pariatur, corporis accusantium atque neque quaerat minus! Itaque quaerat, vel quia veritatis at doloremque ad? Minima illum mollitia nam, nemo dolorum voluptatum modi consequatur nihil qui corporis quaerat recusandae debitis ex?</p>
         </div>
-        <div class="col-12 col-lg-7 order-1 order-lg-12 shape"></div>
+        <div class="col-12 col-lg-6 offset-lg-1 order-1 order-lg-2 shape1"></div>
+        
+        <div class="col-12 col-lg-6 shape2 order-3 order-lg-3"></div>
+        <div class="col-12 col-lg-5 offset-lg-1 order-4 order-lg-4">
+          <p class="text-right"><b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Iusto magni, eius atque iste ullam modi porro totam? Eligendi deleniti minus exercitationem, neque iure alias. Perferendis quia ex laudantium unde? Esse quidem minus dolor? Exercitationem sit mollitia doloremque minus autem eligendi, porro omnis impedit dolorum tempora adipisci temporibus officia, facere dolor cupiditate veniam! Tempora optio aperiam quo! Et maiores voluptatum a adipisci culpa similique molestiae voluptas sed ducimus animi nostrum pariatur, corporis accusantium atque neque quaerat minus! Itaque quaerat, vel quia veritatis at doloremque ad? Minima illum mollitia nam, nemo dolorum voluptatum modi consequatur nihil qui corporis quaerat recusandae debitis ex?</p>
+        </div>
+        
       </div>
       <h2>I have some skills at</h2>
       <div class="row">
@@ -91,22 +99,21 @@
   <div id="gallery"></div>
   <div class="gallery">
     <div class="container-fluid">
-    <h1>Gallery</h1>
+      <h1>Gallery</h1>
+      <div class="gallery-item"><img src="images/" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
+      <div class="gallery-item"><img src="" alt=""></div>
     </div>
   </div>
   <div class="socials"></div>
 
-    <script  src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $('a[href^="#"]').bind("click", function(e){
-  var anchor = $(this);
-  $('html, body').stop().animate({
-   scrollTop: $(anchor.attr("href")).offset().top
-  }, 1000);
-  e.preventDefault();
- });
- return false;
-    </script>
+  <script  src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
