@@ -1,0 +1,86 @@
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 400%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .about p {
+        font-size: 17px;
+    }
+
+    .contacts-item {
+        height: 100px;
+        padding: 10px 10px;
+    }
+
+    .contacts-item span {
+        font-size: 175%;
+    }
+
+    footer span {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media (min-width: 768px) { 
+    .carousel, .carousel-inner, .carousel-item {
+        height: calc(100vh - 100px);
+    }
+    .carousel-caption h1 {
+        font-size: 500%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 300%;
+    }
+
+    .shape1, .shape2 {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .about p {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .shape1 {
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 3% 100%);
+        background: url(../images/about1.jpg);
+    }
+
+    .shape2 {
+        clip-path: polygon(0 0, 97% 0, 70% 100%, 0 100%);
+        background: url(../images/about2.JPG);
+    }
+
+    .shape1:hover {
+        clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .shape2:hover {
+        clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
+    }
+    
+    .shape1, .shape2 {
+        height: 600px;
+        transition: .3s ease-in-out;
+        background-size: cover;
+    }
+
+    .about-text-1 {
+        text-align: left!important;
+    }
+
+    .about-text-2 {
+        text-align: right!important;
+    }
+}

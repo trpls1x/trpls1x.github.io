@@ -74,6 +74,7 @@ h2 {
 }
 
 .carousel-caption h1 {
+    margin-top: 0;
     color: #fff;
     font-size: 300%;
     font-weight: bold;
@@ -92,23 +93,10 @@ h2 {
     background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
-    .carousel, .carousel-inner, .carousel-item {
-        height: calc(100vh - 100px);
-    }
-    .carousel-caption h1 {
-        font-size: 500%;
-    }
-
-    .carousel-caption h3 {
-        font-size: 300%;
-    }
-}
-
 /*------------------------------------------------------About----------------------------------------------------*/
 
 .about p {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .about .col-12 {
@@ -116,27 +104,18 @@ h2 {
 }
 
 .shape1 {
-    clip-path: polygon(30% 0, 100% 0, 100% 100%, 3% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background: url(../images/about1.jpg);
 }
 
 .shape2 {
-    clip-path: polygon(0 0, 97% 0, 70% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background: url(../images/about2.JPG);
 }
 
 .shape1, .shape2 {
-    height: 600px;
+    height: 300px;
     background-size: cover;
-    transition: .3s ease-in-out;
-}
-
-.shape1:hover {
-    clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.shape2:hover {
-    clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
 }
 
 .skill-item {
@@ -167,14 +146,14 @@ h2 {
 
 /*------------------------------------------------------Gallery----------------------------------------------------*/
 
-#target {
+.gallery img {
     width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
     transition: .3s;
 }
   
-#target:hover {
+.gallery img:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px #222;
 }
@@ -294,7 +273,7 @@ footer {
     background: #F2F4F5;
 }
 
-footer .col-md-6 {
+footer .col-lg-6 {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -303,6 +282,7 @@ footer .col-md-6 {
 
 footer span {
     font-size: 200%;
+    text-align: center;
 }
 
 footer button {
