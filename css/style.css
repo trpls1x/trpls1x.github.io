@@ -103,6 +103,10 @@ h2 {
     margin-top: 40px;
 }
 
+.about-text-2 a {
+    color: #222;
+}
+
 .shape1 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background: url(../images/about1.jpg);
@@ -139,11 +143,17 @@ h2 {
     height: auto;
 }
 
-.skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px #222;
+.text-center {
+    margin-top: 20px;
 }
 
+audio {
+    width: 100%;
+}
+
+audio:focus {
+    outline: none;
+}
 /*------------------------------------------------------Gallery----------------------------------------------------*/
 
 .gallery img {
